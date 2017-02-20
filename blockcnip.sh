@@ -58,7 +58,8 @@ iptables -A OUTPUT -d www.zhihu.com -j REJECT
 iptables -A OUTPUT -d zhihu.com -j REJECT
 iptables -A OUTPUT -d static.zhihu.com -j REJECT
 iptables -A OUTPUT -d comet.zhihu.com -j REJECT
-
+iptables -A OUTPUT -d mmbiz.qpic.cn -j REJECT
+iptables -A OUTPUT -d wx.qlogo.cn -j REJECT
 #360
 iptables -A OUTPUT -d 360.com -j REJECT
 iptables -A OUTPUT -d hao.360.cn -j REJECT
