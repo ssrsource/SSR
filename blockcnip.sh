@@ -162,7 +162,6 @@ iptables -A OUTPUT -d mmstat.ucweb.com -j REJECT
 iptables -A OUTPUT -d track.uc.cn -j REJECT
 iptables -A OUTPUT -d u.dcs.maxthon.com -j REJECT
 iptables -A OUTPUT -d push-s.maxthon.com -j REJECT
-iptables -A OUTPUT -d 3600.com -j REJECT
 iptables -A OUTPUT -d dev.tg.wan.360.cn -j REJECT
 iptables -A OUTPUT -d f.360.cn -j REJECT
 iptables -A OUTPUT -d kuaikan.netmon.360safe.com -j REJECT
