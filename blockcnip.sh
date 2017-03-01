@@ -11,6 +11,7 @@ iptables -A OUTPUT -d imgsrc.baidu.com -j REJECT
 iptables -A OUTPUT -d pan.baidu.com -j REJECT
 iptables -A OUTPUT -d nsclick.baidu.com -j REJECT
 iptables -A OUTPUT -d masterconn.qq.com -j REJECT
+iptables -A OUTPUT -d exp.bdstatic.com -j REJECT
 iptables -A OUTPUT -d m.baidu.com -j REJECT
 iptables -A OUTPUT -d post.n.shifen.com -j REJECT
 iptables -A OUTPUT -d suggestion.baidu.com -j REJECT
@@ -86,6 +87,11 @@ iptables -A OUTPUT -d beacon.sina.com.cn -j REJECT
 iptables -A OUTPUT -d weibo.com -j REJECT
 iptables -A OUTPUT -d api.weibo.cn -j REJECT
 iptables -A OUTPUT -d login.sina.com.cn -j REJECT
+iptables -A OUTPUT -d rm.api.weibo.com -j REJECT
+iptables -A OUTPUT -d video.weibo.com -j REJECT
+iptables -A OUTPUT -d rm.api.weibo.com -j REJECT
+iptables -A OUTPUT -d passport.weibo.com -j REJECT
+iptables -A OUTPUT -d m.weibo.cn -j REJECT
 #video and tracking
 iptables -A OUTPUT -d youku.com -j REJECT
 iptables -A OUTPUT -d v.l.youku.com -j REJECT
@@ -99,16 +105,17 @@ iptables -A OUTPUT -d www.tudou.com -j REJECT
 iptables -A OUTPUT -d www.bilibili.com -j REJECT
 iptables -A OUTPUT -d bilibili.com -j REJECT
 iptables -A OUTPUT -d api.bilibili.com -j REJECT
-
 iptables -A OUTPUT -d www.acfun.tv -j REJECT
 iptables -A OUTPUT -d so.com -j REJECT
 iptables -A OUTPUT -d www.so.com -j REJECT
+iptables -A OUTPUT -d www.xiami.com -j REJECT
 iptables -A OUTPUT -d kuai.xunlei.com -j REJECT
 iptables -A OUTPUT -d xunlei.com -j REJECT
 iptables -A OUTPUT -d vip.xunlei.com -j REJECT
 iptables -A OUTPUT -d iqiyi.com -j REJECT
 iptables -A OUTPUT -d www.iqiyi.com -j REJECT
 iptables -A OUTPUT -d so.iqiyi.com -j REJECT
+iptables -A OUTPUT -d data.video.qiyi.com -j REJECT
 iptables -A OUTPUT -d tv.sohu.com -j REJECT
 iptables -A OUTPUT -d qihoo.com -j REJECT
 iptables -A OUTPUT -d 115.com -j REJECT
