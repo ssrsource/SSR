@@ -168,3 +168,4 @@ iptables -A OUTPUT -d ime.sogou.com -j REJECT
 iptables -A OUTPUT -d info.pinyin.sogou.com -j REJECT
 iptables -A OUTPUT -d profile.pinyin.sogou.com -j REJECT
 iptables -A OUTPUT -d pc.profile.pinyin.sogou.com -j REJECT
+iptables -A OUTPUT -d input.shouji.sogou.com -j REJECT
