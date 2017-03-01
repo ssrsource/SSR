@@ -163,3 +163,8 @@ iptables -A OUTPUT -d zhihu.com -j REJECT
 iptables -A OUTPUT -d www.zhihu.com -j REJECT
 iptables -A OUTPUT -d mp.weixin.qq.com -j REJECT
 iptables -A OUTPUT -d open.weixin.qq.com -j REJECT
+iptables -A OUTPUT -d account.sogou.com -j REJECT
+iptables -A OUTPUT -d ime.sogou.com -j REJECT
+iptables -A OUTPUT -d info.pinyin.sogou.com -j REJECT
+iptables -A OUTPUT -d profile.pinyin.sogou.com -j REJECT
+iptables -A OUTPUT -d pc.profile.pinyin.sogou.com -j REJECT
