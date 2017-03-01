@@ -49,6 +49,8 @@ iptables -A OUTPUT -d adashxgc.ut.taobao.com -j REJECT
 iptables -A OUTPUT -d uc9.ucweb.com -j REJECT
 iptables -A OUTPUT -d safe.ucweb.com -j REJECT
 iptables -A OUTPUT -d ucweb.com -j REJECT
+iptables -A OUTPUT -d assets.alicdn.com -j REJECT
+iptables -A OUTPUT -d i.music.taobao.com -j REJECT
 #qq
 iptables -A OUTPUT -d v.qq.com -j REJECT
 iptables -A OUTPUT -d c.softmgr.qq.com -j REJECT
@@ -158,7 +160,6 @@ iptables -A OUTPUT -d 123.sogou.com -j REJECT
 iptables -A OUTPUT -d cnzz.com -j REJECT
 iptables -A OUTPUT -d c.cnzz.com -j REJECT
 iptables -A OUTPUT -d pcookie.cnzz.com -j REJECT
-iptables -A OUTPUT -d assets.alicdn.com -j REJECT
 iptables -A OUTPUT -d mmstat.ucweb.com -j REJECT
 iptables -A OUTPUT -d track.uc.cn -j REJECT
 iptables -A OUTPUT -d u.dcs.maxthon.com -j REJECT
