@@ -106,6 +106,7 @@ iptables -A OUTPUT -d passport.weibo.com -j REJECT
 iptables -A OUTPUT -d m.weibo.cn -j REJECT
 #video and tracking
 iptables -A OUTPUT -d youku.com -j REJECT
+iptables -A OUTPUT -d music.163.com -j REJECT
 iptables -A OUTPUT -d v.l.youku.com -j REJECT
 iptables -A OUTPUT -d p.l.ykimg.com -j REJECT
 iptables -A OUTPUT -d v.youku.com -j REJECT
