@@ -8,6 +8,7 @@ iptables -A OUTPUT -d baike.baidu.com -j REJECT
 iptables -A OUTPUT -d static.tieba.baidu.com -j REJECT
 iptables -A OUTPUT -d zhidao.baidu.com -j REJECT
 iptables -A OUTPUT -d imgsrc.baidu.com -j REJECT
+iptables -A OUTPUT -d jingyan.baidu.com -j REJECT
 iptables -A OUTPUT -d pan.baidu.com -j REJECT
 iptables -A OUTPUT -d nsclick.baidu.com -j REJECT
 iptables -A OUTPUT -d masterconn.qq.com -j REJECT
@@ -48,7 +49,6 @@ iptables -A OUTPUT -d adashxgc.ut.taobao.com -j REJECT
 iptables -A OUTPUT -d uc9.ucweb.com -j REJECT
 iptables -A OUTPUT -d safe.ucweb.com -j REJECT
 iptables -A OUTPUT -d ucweb.com -j REJECT
-
 #qq
 iptables -A OUTPUT -d v.qq.com -j REJECT
 iptables -A OUTPUT -d c.softmgr.qq.com -j REJECT
@@ -61,6 +61,18 @@ iptables -A OUTPUT -d static.zhihu.com -j REJECT
 iptables -A OUTPUT -d comet.zhihu.com -j REJECT
 iptables -A OUTPUT -d mmbiz.qpic.cn -j REJECT
 iptables -A OUTPUT -d wx.qlogo.cn -j REJECT
+iptables -A OUTPUT -d mp.weixin.qq.com -j REJECT
+iptables -A OUTPUT -d open.weixin.qq.com -j REJECT
+iptables -A OUTPUT -d account.sogou.com -j REJECT
+iptables -A OUTPUT -d ime.sogou.com -j REJECT
+iptables -A OUTPUT -d info.pinyin.sogou.com -j REJECT
+iptables -A OUTPUT -d profile.pinyin.sogou.com -j REJECT
+iptables -A OUTPUT -d pc.profile.pinyin.sogou.com -j REJECT
+iptables -A OUTPUT -d input.shouji.sogou.com -j REJECT
+iptables -A OUTPUT -d short.weixin.qq.com -j REJECT
+iptables -A OUTPUT -d ios.bugly.qq.com -j REJECT
+iptables -A OUTPUT -d szextshort.weixin.qq.com -j REJECT
+iptables -A OUTPUT -d wx.qq.com -j REJECT
 #360
 iptables -A OUTPUT -d 360.com -j REJECT
 iptables -A OUTPUT -d hao.360.cn -j REJECT
@@ -132,10 +144,6 @@ iptables -A OUTPUT -d www.yy.com -j REJECT
 iptables -A OUTPUT -d yy.com -j REJECT
 iptables -A OUTPUT -d cntv.vod.cdn.myqcloud.com -j REJECT
 iptables -A OUTPUT -d wx.qlogo.cn -j REJECT
-iptables -A OUTPUT -d st.vq.ku6.cn -j REJECT
-iptables -A OUTPUT -d www.ku6.com -j REJECT
-iptables -A OUTPUT -d st.vq.ku6.cn -j REJECT
-iptables -A OUTPUT -d ku6.com -j REJECT
 iptables -A OUTPUT -d log.vdn.apps.cntv.cn -j REJECT
 iptables -A OUTPUT -d log.vdn.apps.cntv.cn -j REJECT
 iptables -A OUTPUT -d player.cntv.cn -j REJECT
@@ -161,6 +169,7 @@ iptables -A OUTPUT -d kuaikan.netmon.360safe.com -j REJECT
 iptables -A OUTPUT -d openbox.mobilem.360.cn -j REJECT
 iptables -A OUTPUT -d pub.se.360.cn -j REJECT
 iptables -A OUTPUT -d soft.data.weather.360.cn -j REJECT
+iptables -A OUTPUT -d www.airchina.com.cn -j REJECT
 iptables -A OUTPUT -d zhushou.huihui.cn -j REJECT
 iptables -A OUTPUT -d www.huihui.cn -j REJECT
 iptables -A OUTPUT -d beacon.sina.com.cn -j REJECT
@@ -168,11 +177,3 @@ iptables -A OUTPUT -d www.tianya.cn -j REJECT
 iptables -A OUTPUT -d bbs.tianya.cn -j REJECT
 iptables -A OUTPUT -d zhihu.com -j REJECT
 iptables -A OUTPUT -d www.zhihu.com -j REJECT
-iptables -A OUTPUT -d mp.weixin.qq.com -j REJECT
-iptables -A OUTPUT -d open.weixin.qq.com -j REJECT
-iptables -A OUTPUT -d account.sogou.com -j REJECT
-iptables -A OUTPUT -d ime.sogou.com -j REJECT
-iptables -A OUTPUT -d info.pinyin.sogou.com -j REJECT
-iptables -A OUTPUT -d profile.pinyin.sogou.com -j REJECT
-iptables -A OUTPUT -d pc.profile.pinyin.sogou.com -j REJECT
-iptables -A OUTPUT -d input.shouji.sogou.com -j REJECT
