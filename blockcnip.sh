@@ -51,6 +51,7 @@ iptables -A OUTPUT -d safe.ucweb.com -j REJECT
 iptables -A OUTPUT -d ucweb.com -j REJECT
 iptables -A OUTPUT -d assets.alicdn.com -j REJECT
 iptables -A OUTPUT -d i.music.taobao.com -j REJECT
+iptables -A OUTPUT -d miserupdate.aliyun.com -j REJECT
 #qq
 iptables -A OUTPUT -d v.qq.com -j REJECT
 iptables -A OUTPUT -d c.softmgr.qq.com -j REJECT
