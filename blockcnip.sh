@@ -75,6 +75,13 @@ iptables -A OUTPUT -d short.weixin.qq.com -j REJECT
 iptables -A OUTPUT -d ios.bugly.qq.com -j REJECT
 iptables -A OUTPUT -d szextshort.weixin.qq.com -j REJECT
 iptables -A OUTPUT -d wx.qq.com -j REJECT
+#xiaomi
+iptables -A OUTPUT -d resolver.msg.xiaomi.net -j REJECT
+iptables -A OUTPUT -d a.stat.xiaomi.com -j REJECT
+iptables -A OUTPUT -d app.market.xiaomi.com -j REJECT
+iptables -A OUTPUT -d data.mistat.xiaomi.com -j REJECT
+iptables -A OUTPUT -d new.api.ad.xiaomi.com -j REJECT
+iptables -A OUTPUT -d api.account.xiaomi.com -j REJECT
 #360
 iptables -A OUTPUT -d 360.com -j REJECT
 iptables -A OUTPUT -d hao.360.cn -j REJECT
