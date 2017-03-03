@@ -5,11 +5,13 @@ iptables -A OUTPUT -d baidu.com -j REJECT
 iptables -A OUTPUT -d tieba.com -j REJECT
 iptables -A OUTPUT -d tieba.baidu.com -j REJECT
 iptables -A OUTPUT -d baike.baidu.com -j REJECT
+iptables -A OUTPUT -d news.baidu.com -j REJECT
 iptables -A OUTPUT -d static.tieba.baidu.com -j REJECT
 iptables -A OUTPUT -d zhidao.baidu.com -j REJECT
 iptables -A OUTPUT -d imgsrc.baidu.com -j REJECT
 iptables -A OUTPUT -d jingyan.baidu.com -j REJECT
 iptables -A OUTPUT -d pan.baidu.com -j REJECT
+iptables -A OUTPUT -d map.baidu.com -j REJECT
 iptables -A OUTPUT -d nsclick.baidu.com -j REJECT
 iptables -A OUTPUT -d masterconn.qq.com -j REJECT
 iptables -A OUTPUT -d exp.bdstatic.com -j REJECT
@@ -77,6 +79,7 @@ iptables -A OUTPUT -d ios.bugly.qq.com -j REJECT
 iptables -A OUTPUT -d szextshort.weixin.qq.com -j REJECT
 iptables -A OUTPUT -d wx.qq.com -j REJECT
 iptables -A OUTPUT -d wximg.qq.com -j REJECT
+iptables -A OUTPUT -d qzone.qq.com -j REJECT
 #xiaomi
 iptables -A OUTPUT -d resolver.msg.xiaomi.net -j REJECT
 iptables -A OUTPUT -d a.stat.xiaomi.com -j REJECT
@@ -183,6 +186,7 @@ iptables -A OUTPUT -d www.airchina.com.cn -j REJECT
 iptables -A OUTPUT -d zhushou.huihui.cn -j REJECT
 iptables -A OUTPUT -d www.huihui.cn -j REJECT
 iptables -A OUTPUT -d beacon.sina.com.cn -j REJECT
+#bbs
 iptables -A OUTPUT -d www.tianya.cn -j REJECT
 iptables -A OUTPUT -d bbs.tianya.cn -j REJECT
 iptables -A OUTPUT -d zhihu.com -j REJECT
@@ -194,5 +198,16 @@ iptables -A OUTPUT -d nba.hupu.com -j REJECT
 iptables -A OUTPUT -d bbs.hupu.com -j REJECT
 iptables -A OUTPUT -d soccer.hupu.com -j REJECT
 iptables -A OUTPUT -d m.hupu.com -j REJECT
+iptables -A OUTPUT -d bbs.ngacn.cc -j REJECT
+iptables -A OUTPUT -d bbs.nga.cn -j REJECT
+iptables -A OUTPUT -d bbs.3dmgame.com -j REJECT
+iptables -A OUTPUT -d www.kdslife.com -j REJECT
+iptables -A OUTPUT -d club.kdslife.com -j REJECT
+iptables -A OUTPUT -d pchome.net -j REJECT
+iptables -A OUTPUT -d www.pchome.net -j REJECT
+iptables -A OUTPUT -d www.kdnet.net -j REJECT
+iptables -A OUTPUT -d bbs.tiexue.net -j REJECT
+iptables -A OUTPUT -d lt.cjdby.net -j REJECT
+
 
 
