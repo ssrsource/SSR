@@ -189,5 +189,10 @@ iptables -A OUTPUT -d zhihu.com -j REJECT
 iptables -A OUTPUT -d www.zhihu.com -j REJECT
 iptables -A OUTPUT -d gamersky.com -j REJECT
 iptables -A OUTPUT -d www.itmo.com -j REJECT
+iptables -A OUTPUT -d www.hupu.com -j REJECT
+iptables -A OUTPUT -d nba.hupu.com -j REJECT
+iptables -A OUTPUT -d bbs.hupu.com -j REJECT
+iptables -A OUTPUT -d soccer.hupu.com -j REJECT
+iptables -A OUTPUT -d m.hupu.com -j REJECT
 
 
