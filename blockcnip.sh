@@ -188,4 +188,6 @@ iptables -A OUTPUT -d bbs.tianya.cn -j REJECT
 iptables -A OUTPUT -d zhihu.com -j REJECT
 iptables -A OUTPUT -d www.zhihu.com -j REJECT
 iptables -A OUTPUT -d gamersky.com -j REJECT
+iptables -A OUTPUT -d www.itmo.com -j REJECT
+
 
