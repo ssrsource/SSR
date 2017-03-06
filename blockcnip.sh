@@ -210,5 +210,6 @@ iptables -A OUTPUT -d www.kdnet.net -j REJECT
 iptables -A OUTPUT -d bbs.tiexue.net -j REJECT
 iptables -A OUTPUT -d lt.cjdby.net -j REJECT
 iptables -A OUTPUT -d www.yinyuetai.com -j REJECT
+iptables -A OUTPUT -d www.dell.com -j REJECT
 
 
