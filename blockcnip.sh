@@ -187,6 +187,10 @@ iptables -A OUTPUT -d www.airchina.com.cn -j REJECT
 iptables -A OUTPUT -d zhushou.huihui.cn -j REJECT
 iptables -A OUTPUT -d www.huihui.cn -j REJECT
 iptables -A OUTPUT -d beacon.sina.com.cn -j REJECT
+iptables -A OUTPUT -d query.hicloud.com -j REJECT
+iptables -A OUTPUT -d hisync1.hicloud.com -J REJECT
+iptables -A OUTPUT -d push1.hicloud.com -J REJECT
+iptables -A OUTPUT -d photoshare1.hicloud.com -j REJECT
 #bbs
 iptables -A OUTPUT -d www.tianya.cn -j REJECT
 iptables -A OUTPUT -d bbs.tianya.cn -j REJECT
