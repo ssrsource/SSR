@@ -1,4 +1,5 @@
 #!/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin 
 iptables -F OUTPUT
 #baidu
 iptables -A OUTPUT -d baidu.com -j REJECT
