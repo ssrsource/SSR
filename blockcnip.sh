@@ -188,8 +188,8 @@ iptables -A OUTPUT -d zhushou.huihui.cn -j REJECT
 iptables -A OUTPUT -d www.huihui.cn -j REJECT
 iptables -A OUTPUT -d beacon.sina.com.cn -j REJECT
 iptables -A OUTPUT -d query.hicloud.com -j REJECT
-iptables -A OUTPUT -d hisync1.hicloud.com -J REJECT
-iptables -A OUTPUT -d push1.hicloud.com -J REJECT
+iptables -A OUTPUT -d hisync1.hicloud.com -j REJECT
+iptables -A OUTPUT -d push1.hicloud.com -j REJECT
 iptables -A OUTPUT -d photoshare1.hicloud.com -j REJECT
 iptables -A OUTPUT -d cn.wifi.com -j REJECT
 iptables -A OUTPUT -d ap.51y5.net -j REJECT
