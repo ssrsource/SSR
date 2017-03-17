@@ -106,6 +106,10 @@ iptables -A OUTPUT -d cdata.browser.360.cn -j REJECT
 iptables -A OUTPUT -d profile.se.360.cn -j REJECT
 iptables -A OUTPUT -d stat.wifi.360.cn -j REJECT
 iptables -A OUTPUT -d tip.f.360.cn -j REJECT
+iptables -A OUTPUT -d seupdate.360safe.com -j REJECT
+iptables -A OUTPUT -d www.360kan.com -j REJECT
+iptables -A OUTPUT -d s.360.cn -j REJECT
+iptables -A OUTPUT -d dd.browser.360.cn -j REJECT
 #sina
 iptables -A OUTPUT -d sina.com.cn -j REJECT
 iptables -A OUTPUT -d www.sina.com.cn -j REJECT
@@ -218,6 +222,7 @@ iptables -A OUTPUT -d www.kdnet.net -j REJECT
 iptables -A OUTPUT -d bbs.tiexue.net -j REJECT
 iptables -A OUTPUT -d lt.cjdby.net -j REJECT
 iptables -A OUTPUT -d www.yinyuetai.com -j REJECT
+iptables -A OUTPUT -d yinyuetai.com -j REJECT
 iptables -A OUTPUT -d www.dell.com -j REJECT
 
 
