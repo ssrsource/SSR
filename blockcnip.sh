@@ -43,7 +43,9 @@ iptables -A OUTPUT -d gateway.browser.taobao.com -j REJECT
 iptables -A OUTPUT -d taobao.com -j REJECT
 iptables -A OUTPUT -d m.taobao.com -j REJECT
 iptables -A OUTPUT -d www.alipay.com -j REJECT
-
+iptables -A OUTPUT -d mobilegw.alipay.com -j REJECT
+iptables -A OUTPUT -d ynuf.alipay.com -j REJECT
+iptables -A OUTPUT -d os.alipayobjects.com -j REJECT
 iptables -A OUTPUT -d adash.m.taobao.com -j REJECT
 iptables -A OUTPUT -d api.m.taobao.com -j REJECT
 iptables -A OUTPUT -d mdap.alipaylog.com -j REJECT
