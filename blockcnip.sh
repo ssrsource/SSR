@@ -110,6 +110,12 @@ iptables -A OUTPUT -d seupdate.360safe.com -j REJECT
 iptables -A OUTPUT -d www.360kan.com -j REJECT
 iptables -A OUTPUT -d s.360.cn -j REJECT
 iptables -A OUTPUT -d dd.browser.360.cn -j REJECT
+iptables -A OUTPUT -d dl.360safe.com -j REJECT
+iptables -A OUTPUT -d site.browser.360.cn -j REJECT
+iptables -A OUTPUT -d elephant.browser.360.cn -j REJECT
+iptables -A OUTPUT -d stat.lianmeng.360.cn -j REJECT
+iptables -A OUTPUT -d vconf.f.360.cn -j REJECT
+iptables -A OUTPUT -d sconf.f.360.cn -j REJECT
 #sina
 iptables -A OUTPUT -d sina.com.cn -j REJECT
 iptables -A OUTPUT -d www.sina.com.cn -j REJECT
