@@ -43,6 +43,7 @@ iptables -A OUTPUT -d gateway.browser.taobao.com -j REJECT
 iptables -A OUTPUT -d taobao.com -j REJECT
 iptables -A OUTPUT -d m.taobao.com -j REJECT
 iptables -A OUTPUT -d www.alipay.com -j REJECT
+
 iptables -A OUTPUT -d adash.m.taobao.com -j REJECT
 iptables -A OUTPUT -d api.m.taobao.com -j REJECT
 iptables -A OUTPUT -d mdap.alipaylog.com -j REJECT
@@ -55,6 +56,18 @@ iptables -A OUTPUT -d ucweb.com -j REJECT
 iptables -A OUTPUT -d assets.alicdn.com -j REJECT
 iptables -A OUTPUT -d i.music.taobao.com -j REJECT
 iptables -A OUTPUT -d miserupdate.aliyun.com -j REJECT
+iptables -A OUTPUT -d www.taobao.com -j REJECT
+iptables -A OUTPUT -d apoll.m.taobao.com -j REJECT
+iptables -A OUTPUT -d adashbc.ut.taobao.com -j REJECT
+iptables -A OUTPUT -d alipay.dl.django.t.taobao.com -j REJECT
+iptables -A OUTPUT -d world.taobao.com -j REJECT
+iptables -A OUTPUT -d yiliao.wangxin.taobao.com -j REJECT
+iptables -A OUTPUT -d api.2.taobao.com -j REJECT
+iptables -A OUTPUT -d mdskip.taobao.com -j REJECT
+iptables -A OUTPUT -d login.taoba.com -j REJECT
+iptables -A OUTPUT -d qrlogin.taobao.com -j REJECT
+iptables -A OUTPUT -d webww.taobao.com -j REJECT
+
 #qq
 iptables -A OUTPUT -d v.qq.com -j REJECT
 iptables -A OUTPUT -d c.softmgr.qq.com -j REJECT
