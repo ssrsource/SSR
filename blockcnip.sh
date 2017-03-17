@@ -98,6 +98,7 @@ iptables -A OUTPUT -d wximg.qq.com -j REJECT
 iptables -A OUTPUT -d qzone.qq.com -j REJECT
 iptables -A OUTPUT -d hb.crm2.qq.com -j REJECT
 iptables -A OUTPUT -d pingma.qq.com -j REJECT
+iptables -A OUTPUT -d emoji.qpic.cn -j REJECT
 #xiaomi
 iptables -A OUTPUT -d resolver.msg.xiaomi.net -j REJECT
 iptables -A OUTPUT -d a.stat.xiaomi.com -j REJECT
