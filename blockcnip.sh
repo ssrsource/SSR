@@ -133,6 +133,7 @@ iptables -A OUTPUT -d elephant.browser.360.cn -j REJECT
 iptables -A OUTPUT -d stat.lianmeng.360.cn -j REJECT
 iptables -A OUTPUT -d vconf.f.360.cn -j REJECT
 iptables -A OUTPUT -d sconf.f.360.cn -j REJECT
+iptables -A OUTPUT -d cl.vd.f.360.cn -j REJECT
 #sina
 iptables -A OUTPUT -d sina.com.cn -j REJECT
 iptables -A OUTPUT -d www.sina.com.cn -j REJECT
