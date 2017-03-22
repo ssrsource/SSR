@@ -193,6 +193,7 @@ iptables -A OUTPUT -d log.vdn.apps.cntv.cn -j REJECT
 iptables -A OUTPUT -d log.vdn.apps.cntv.cn -j REJECT
 iptables -A OUTPUT -d player.cntv.cn -j REJECT
 iptables -A OUTPUT -d terren.cntv.cn -j REJECT
+iptables -A OUTPUT -d data.flurry.com -j REJECT
 #misc
 iptables -A OUTPUT -d hao123.com -j REJECT
 iptables -A OUTPUT -d www.hao123.com -j REJECT
