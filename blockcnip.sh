@@ -69,6 +69,7 @@ iptables -A OUTPUT -d mdskip.taobao.com -j REJECT
 iptables -A OUTPUT -d login.taoba.com -j REJECT
 iptables -A OUTPUT -d qrlogin.taobao.com -j REJECT
 iptables -A OUTPUT -d webww.taobao.com -j REJECT
+iptables -A OUTPUT -d www.dingtalk.com -j REJECT
 
 #qq
 iptables -A OUTPUT -d v.qq.com -j REJECT
@@ -134,6 +135,8 @@ iptables -A OUTPUT -d stat.lianmeng.360.cn -j REJECT
 iptables -A OUTPUT -d vconf.f.360.cn -j REJECT
 iptables -A OUTPUT -d sconf.f.360.cn -j REJECT
 iptables -A OUTPUT -d cl.vd.f.360.cn -j REJECT
+iptables -A OUTPUT -d md.openapi.360.cn -j REJECT
+iptables -A OUTPUT -d dlleak3.360safe.com -j REJECT
 #sina
 iptables -A OUTPUT -d sina.com.cn -j REJECT
 iptables -A OUTPUT -d www.sina.com.cn -j REJECT
@@ -148,6 +151,11 @@ iptables -A OUTPUT -d video.weibo.com -j REJECT
 iptables -A OUTPUT -d rm.api.weibo.com -j REJECT
 iptables -A OUTPUT -d passport.weibo.com -j REJECT
 iptables -A OUTPUT -d m.weibo.cn -j REJECT
+iptables -A OUTPUT -d h5.sinaimg.cn -j REJECT
+iptables -A OUTPUT -d wx2.sinaimg.cn -j REJECT
+iptables -A OUTPUT -d wx1.sinaimg.cn -j REJECT
+iptables -A OUTPUT -d tva1.sinaimg.cn -j REJECT
+
 #video and tracking
 iptables -A OUTPUT -d youku.com -j REJECT
 iptables -A OUTPUT -d music.163.com -j REJECT
@@ -224,6 +232,8 @@ iptables -A OUTPUT -d photoshare1.hicloud.com -j REJECT
 iptables -A OUTPUT -d cn.wifi.com -j REJECT
 iptables -A OUTPUT -d ap.51y5.net -j REJECT
 iptables -A OUTPUT -d www.hicloud.com -j REJECT
+iptables -A OUTPUT -d dict.youdao.com -j REJECT
+iptables -A OUTPUT -d config.pinyin.sogou.com -j REJECT
 #bbs
 iptables -A OUTPUT -d www.tianya.cn -j REJECT
 iptables -A OUTPUT -d bbs.tianya.cn -j REJECT
