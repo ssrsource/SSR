@@ -104,6 +104,7 @@ iptables -A OUTPUT -d emoji.qpic.cn -j REJECT
 iptables -A OUTPUT -d rescdn.qqmail.com -j REJECT
 iptables -A OUTPUT -d mail.qq.com -j REJECT
 iptables -A OUTPUT -d exmail.qq.com -j REJECT
+iptables -A OUTPUT -d client.show.qq.com -j REJECT
 #xiaomi
 iptables -A OUTPUT -d resolver.msg.xiaomi.net -j REJECT
 iptables -A OUTPUT -d a.stat.xiaomi.com -j REJECT
