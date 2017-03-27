@@ -31,6 +31,8 @@ iptables -A OUTPUT -d mp.toutiao.com -j REJECT
 iptables -A OUTPUT -d jd.com -j REJECT
 iptables -A OUTPUT -d www.jd.com -j REJECT
 iptables -A OUTPUT -d search.jd.com -j REJECT
+iptables -A OUTPUT -d s-ec.bstatic.com -j REJECT
+iptables -A OUTPUT -d t-ec.bstatic.com -j REJECT
 #baidumap
 iptables -A OUTPUT -d api.map.baidu.com -j REJECT
 iptables -A OUTPUT -d ps.map.baidu.com -j REJECT
@@ -241,6 +243,14 @@ iptables -A OUTPUT -d ap.51y5.net -j REJECT
 iptables -A OUTPUT -d www.hicloud.com -j REJECT
 iptables -A OUTPUT -d dict.youdao.com -j REJECT
 iptables -A OUTPUT -d config.pinyin.sogou.com -j REJECT
+iptables -A OUTPUT -d cdn.iplaysoft.com -j REJECT
+iptables -A OUTPUT -d iplaysoft.com -j REJECT
+iptables -A OUTPUT -d cdn.sspai.com -j REJECT
+iptables -A OUTPUT -d www.pingwest.com -j REJECT
+iptables -A OUTPUT -d cm.hujiang.com -j REJECT
+iptables -A OUTPUT -d www.yinyuetai.com -j REJECT
+iptables -A OUTPUT -d yinyuetai.com -j REJECT
+iptables -A OUTPUT -d www.dell.com -j REJECT
 #bbs
 iptables -A OUTPUT -d www.tianya.cn -j REJECT
 iptables -A OUTPUT -d bbs.tianya.cn -j REJECT
@@ -263,9 +273,6 @@ iptables -A OUTPUT -d www.pchome.net -j REJECT
 iptables -A OUTPUT -d www.kdnet.net -j REJECT
 iptables -A OUTPUT -d bbs.tiexue.net -j REJECT
 iptables -A OUTPUT -d lt.cjdby.net -j REJECT
-iptables -A OUTPUT -d www.yinyuetai.com -j REJECT
-iptables -A OUTPUT -d yinyuetai.com -j REJECT
-iptables -A OUTPUT -d www.dell.com -j REJECT
-iptables -A OUTPUT -d www.pingwest.com -j REJECT
+
 
 
