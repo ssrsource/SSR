@@ -7,6 +7,7 @@ iptables -A OUTPUT -d tieba.com -j REJECT
 iptables -A OUTPUT -d tieba.baidu.com -j REJECT
 iptables -A OUTPUT -d baike.baidu.com -j REJECT
 iptables -A OUTPUT -d news.baidu.com -j REJECT
+iptables -A OUTPUT -d pos.baidu.com -j REJECT
 iptables -A OUTPUT -d static.tieba.baidu.com -j REJECT
 iptables -A OUTPUT -d zhidao.baidu.com -j REJECT
 iptables -A OUTPUT -d imgsrc.baidu.com -j REJECT
@@ -251,6 +252,8 @@ iptables -A OUTPUT -d cm.hujiang.com -j REJECT
 iptables -A OUTPUT -d www.yinyuetai.com -j REJECT
 iptables -A OUTPUT -d yinyuetai.com -j REJECT
 iptables -A OUTPUT -d www.dell.com -j REJECT
+iptables -A OUTPUT -d huaban.com -j REJECT
+
 #bbs
 iptables -A OUTPUT -d www.tianya.cn -j REJECT
 iptables -A OUTPUT -d bbs.tianya.cn -j REJECT
