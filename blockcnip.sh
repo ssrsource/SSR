@@ -86,6 +86,8 @@ iptables -A OUTPUT -d zhihu.com -j REJECT
 iptables -A OUTPUT -d static.zhihu.com -j REJECT
 iptables -A OUTPUT -d comet.zhihu.com -j REJECT
 iptables -A OUTPUT -d mmbiz.qpic.cn -j REJECT
+iptables -A OUTPUT -d mmsns.qpic.cn -j REJECT
+iptables -A OUTPUT -d shmmsns.qpic.cn -j REJECT
 iptables -A OUTPUT -d wx.qlogo.cn -j REJECT
 iptables -A OUTPUT -d mp.weixin.qq.com -j REJECT
 iptables -A OUTPUT -d open.weixin.qq.com -j REJECT
