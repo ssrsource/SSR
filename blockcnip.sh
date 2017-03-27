@@ -30,6 +30,7 @@ iptables -A OUTPUT -d toutiao.com -j REJECT
 iptables -A OUTPUT -d mp.toutiao.com -j REJECT
 iptables -A OUTPUT -d jd.com -j REJECT
 iptables -A OUTPUT -d www.jd.com -j REJECT
+iptables -A OUTPUT -d search.jd.com -j REJECT
 #baidumap
 iptables -A OUTPUT -d api.map.baidu.com -j REJECT
 iptables -A OUTPUT -d ps.map.baidu.com -j REJECT
@@ -100,6 +101,9 @@ iptables -A OUTPUT -d qzone.qq.com -j REJECT
 iptables -A OUTPUT -d hb.crm2.qq.com -j REJECT
 iptables -A OUTPUT -d pingma.qq.com -j REJECT
 iptables -A OUTPUT -d emoji.qpic.cn -j REJECT
+iptables -A OUTPUT -d rescdn.qqmail.com -j REJECT
+iptables -A OUTPUT -d mail.qq.com -j REJECT
+iptables -A OUTPUT -d exmail.qq.com -j REJECT
 #xiaomi
 iptables -A OUTPUT -d resolver.msg.xiaomi.net -j REJECT
 iptables -A OUTPUT -d a.stat.xiaomi.com -j REJECT
@@ -137,6 +141,8 @@ iptables -A OUTPUT -d sconf.f.360.cn -j REJECT
 iptables -A OUTPUT -d cl.vd.f.360.cn -j REJECT
 iptables -A OUTPUT -d md.openapi.360.cn -j REJECT
 iptables -A OUTPUT -d dlleak3.360safe.com -j REJECT
+iptables -A OUTPUT -d cdn.soft.360.cn -j REJECT
+iptables -A OUTPUT -d baoku.360.cn -j REJECT
 #sina
 iptables -A OUTPUT -d sina.com.cn -j REJECT
 iptables -A OUTPUT -d www.sina.com.cn -j REJECT
@@ -259,5 +265,6 @@ iptables -A OUTPUT -d lt.cjdby.net -j REJECT
 iptables -A OUTPUT -d www.yinyuetai.com -j REJECT
 iptables -A OUTPUT -d yinyuetai.com -j REJECT
 iptables -A OUTPUT -d www.dell.com -j REJECT
+iptables -A OUTPUT -d www.pingwest.com -j REJECT
 
 
