@@ -253,7 +253,7 @@ iptables -A OUTPUT -d www.yinyuetai.com -j REJECT
 iptables -A OUTPUT -d yinyuetai.com -j REJECT
 iptables -A OUTPUT -d www.dell.com -j REJECT
 iptables -A OUTPUT -d huaban.com -j REJECT
-
+iptables -A OUTPUT -d www.amac.org.cn -j REJECT
 #bbs
 iptables -A OUTPUT -d www.tianya.cn -j REJECT
 iptables -A OUTPUT -d bbs.tianya.cn -j REJECT
