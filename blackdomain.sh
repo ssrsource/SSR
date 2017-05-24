@@ -18,6 +18,8 @@ iptables -A OUTPUT -p udp -m string --hex-string "|066d6d7374617403636f6d|" --al
 iptables -A OUTPUT -p udp -m string --hex-string "|0974616f62616f63646e03636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "taobaocdn.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|0579756e6f7303636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "yunos.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|06|alicdn|03|com" --algo bm --dport 53 -j DROP -m comment --comment "alicdn" 
+iptables -A OUTPUT -p udp -m string --hex-string "|04|tmall|03|com" --algo bm --dport 53 -j DROP -m comment --comment "tmall.com" 
+iptables -A OUTPUT -p udp -m string --hex-string "|04|tmall|02|hk" --algo bm --dport 53 -j DROP -m comment --comment "tmall.hk" 
 #baidu
 iptables -A OUTPUT -p udp -m string --hex-string "|05626169647503636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "baidu.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|056261696475026a70|" --algo bm --dport 53 -j DROP -m comment --comment "baidu.jp" 
