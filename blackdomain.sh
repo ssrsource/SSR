@@ -39,7 +39,10 @@ iptables -A OUTPUT -p udp -m string --hex-string "|07|miaopai|03|com" --algo bm 
 #qq
 iptables -A OUTPUT -p udp -m string --hex-string "|047170696302636e|" --algo bm --dport 53 -j DROP -m comment --comment "qpic.cn" 
 iptables -A OUTPUT -p udp -m string --hex-string "|026a6403636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "jd.com" 
-iptables -A OUTPUT -p udp -m string --hex-string "|05736f676f7503636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "sogou.com" 
+iptables -A OUTPUT -p udp -m string --hex-string "|05736f676f7503636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "sogou.com"
+iptables -A OUTPUT -p udp -m string --hex-string "|08|myqcloud|03|com" --algo bm --dport 53 -j DROP -m comment --comment "myqcloud.com" 
+iptables -A OUTPUT -p udp -m string --hex-string "|06|weixin|02|qq|03|com" --algo bm --dport 53 -j DROP -m comment --comment "weixin.qq.com" 
+iptables -A OUTPUT -p udp -m string --hex-string "|05|gtimg|02|cn" --algo bm --dport 53 -j DROP -m comment --comment "gtimg.cn" 
 #mimeizuhuawei
 iptables -A OUTPUT -p udp -m string --hex-string "|026d6903636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "mi.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|026d6902636e|" --algo bm --dport 53 -j DROP -m comment --comment "mi.cn" 
@@ -54,7 +57,9 @@ iptables -A OUTPUT -p udp -m string --hex-string "|05766d616c6c03636f6d|" --algo
 iptables -A OUTPUT -p udp -m string --hex-string "|086877636c6f75647303636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "hwclouds.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|076869636c6f756403636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "hicloud.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|04|duba|03|com" --algo bm --dport 53 -j DROP -m comment --comment "duba.com" 
-
+iptables -A OUTPUT -p udp -m string --hex-string "|03|wps|02|cn" --algo bm --dport 53 -j DROP -m comment --comment "wps.cn" 
+iptables -A OUTPUT -p udp -m string --hex-string "|04|cmcm|03|com" --algo bm --dport 53 -j DROP -m comment --comment "cmcm.com" 
+iptables -A OUTPUT -p udp -m string --hex-string "|06|liebao|02|cn" --algo bm --dport 53 -j DROP -m comment --comment "liebao.cn" 
 #weibo
 iptables -A OUTPUT -p udp -m string --hex-string "|05776569626f03636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "weibo.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|05776569626f02636e|" --algo bm --dport 53 -j DROP -m comment --comment "weibo.cn" 
