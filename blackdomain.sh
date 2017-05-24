@@ -73,6 +73,7 @@ iptables -A OUTPUT -p udp -m string --hex-string "|0473696e6103636f6d02636e|" --
 iptables -A OUTPUT -p udp -m string --hex-string "|0473696e6102636e|" --algo bm --dport 53 -j DROP -m comment --comment "sina.cn" 
 iptables -A OUTPUT -p udp -m string --hex-string "|0473696e6103636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "sina.com"
 iptables -A OUTPUT -p udp -m string --hex-string "|06|sinajs|02|cn" --algo bm --dport 53 -j DROP -m comment --comment "sinajs.cn" 
+iptables -A OUTPUT -p udp -m string --hex-string "|05|weico|02|cc" --algo bm --dport 53 -j DROP -m comment --comment "weico.cc" 
 #video
 iptables -A OUTPUT -p udp -m string --hex-string "|057475646f7503636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "tudou.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|05697169796903636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "iqiyi.com" 
