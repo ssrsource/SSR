@@ -11,7 +11,7 @@ iptables -A OUTPUT -p udp -m string --hex-string "|057168696d6703636f6d|" --algo
 #alipay
 iptables -A OUTPUT -p udp -m string --hex-string "|06616c6970617903636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "alipay.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|04616d617003636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "amap.com" 
-iptables -A OUTPUT -p udp -m string --hex-string "|0673686966656e03636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "shifen.com" 
+iptables -A OUTPUT -p udp -m string --hex-string "|09616c697061796c6f6703636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "alipaylog.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|05756377656203636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "ucweb.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|0864696e6774616c6b03636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "dingtalk.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|02756302636e|" --algo bm --dport 53 -j DROP -m comment --comment "uc.cn" 
