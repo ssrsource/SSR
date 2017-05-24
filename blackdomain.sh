@@ -32,7 +32,7 @@ iptables -A OUTPUT -p udp -m string --hex-string "|08626169647570637303636f6d|" 
 iptables -A OUTPUT -p udp -m string --hex-string "|056264696d6703636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "bdimg.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|08|baiducdn|03|net" --algo bm --dport 53 -j DROP -m comment --comment "baiducdn.net" 
 iptables -A OUTPUT -p udp -m string --hex-string "|11|baidustatic|3|com" --algo bm --dport 53 -j DROP -m comment --comment "baidustatic.com" 
-
+iptables -A OUTPUT -p udp -m string --hex-string "|07|miaopai|03|com" --algo bm --dport 53 -j DROP -m comment --comment "miaopai.com" 
 #qq
 iptables -A OUTPUT -p udp -m string --hex-string "|047170696302636e|" --algo bm --dport 53 -j DROP -m comment --comment "qpic.cn" 
 iptables -A OUTPUT -p udp -m string --hex-string "|026a6403636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "jd.com" 
@@ -59,7 +59,8 @@ iptables -A OUTPUT -p udp -m string --hex-string "|0773696e61696d6702636e|" --al
 iptables -A OUTPUT -p udp -m string --hex-string "|0873696e616e6f646503636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "sinanode.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|0473696e6103636f6d02636e|" --algo bm --dport 53 -j DROP -m comment --comment "sina.com.cn" 
 iptables -A OUTPUT -p udp -m string --hex-string "|0473696e6102636e|" --algo bm --dport 53 -j DROP -m comment --comment "sina.cn" 
-iptables -A OUTPUT -p udp -m string --hex-string "|0473696e6103636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "sina.com" 
+iptables -A OUTPUT -p udp -m string --hex-string "|0473696e6103636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "sina.com"
+
 #video
 iptables -A OUTPUT -p udp -m string --hex-string "|057475646f7503636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "tudou.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|05697169796903636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "iqiyi.com" 
