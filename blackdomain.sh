@@ -30,6 +30,9 @@ iptables -A OUTPUT -p udp -m string --hex-string "|0673686966656e03636f6d|" --al
 iptables -A OUTPUT -p udp -m string --hex-string "|0962616964752d696d6702636e|" --algo bm --dport 53 -j DROP -m comment --comment "baidu-img.cn" 
 iptables -A OUTPUT -p udp -m string --hex-string "|08626169647570637303636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "baidupcs.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|056264696d6703636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "bdimg.com" 
+iptables -A OUTPUT -p udp -m string --hex-string "|08|baiducdn|03|net" --algo bm --dport 53 -j DROP -m comment --comment "baiducdn.net" 
+iptables -A OUTPUT -p udp -m string --hex-string "|11|baidustatic|3|com" --algo bm --dport 53 -j DROP -m comment --comment "baidustatic.com" 
+
 #qq
 iptables -A OUTPUT -p udp -m string --hex-string "|047170696302636e|" --algo bm --dport 53 -j DROP -m comment --comment "qpic.cn" 
 iptables -A OUTPUT -p udp -m string --hex-string "|026a6403636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "jd.com" 
