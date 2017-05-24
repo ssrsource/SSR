@@ -62,6 +62,7 @@ iptables -A OUTPUT -p udp -m string --hex-string "|067869616f6d6902636e|" --algo
 iptables -A OUTPUT -p udp -m string --hex-string "|066d697075736803636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "mipush.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|05666c796d6502636e|" --algo bm --dport 53 -j DROP -m comment --comment "flyme.cn" 
 iptables -A OUTPUT -p udp -m string --hex-string "|056d65697a7503636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "meizu.com" 
+iptables -A OUTPUT -p udp -m string --hex-string "|05|meizu|02|cn" --algo bm --dport 53 -j DROP -m comment --comment "meizu.cn" 
 iptables -A OUTPUT -p udp -m string --hex-string "|0668756177656903636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "huawei.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|0668756177656903636f6d02636e|" --algo bm --dport 53 -j DROP -m comment --comment "huawei.com.cn" 
 iptables -A OUTPUT -p udp -m string --hex-string "|05766d616c6c03636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "vmall.com" 
