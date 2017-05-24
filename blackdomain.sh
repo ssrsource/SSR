@@ -39,6 +39,7 @@ iptables -A OUTPUT -p udp -m string --hex-string "|07|miaopai|03|com" --algo bm 
 iptables -A OUTPUT -p udp -m string --hex-string "|047170696302636e|" --algo bm --dport 53 -j DROP -m comment --comment "qpic.cn" 
 iptables -A OUTPUT -p udp -m string --hex-string "|026a6403636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "jd.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|05736f676f7503636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "sogou.com"
+iptables -A OUTPUT -p udp -m string --hex-string "|08|sogoucdn|03|com" --algo bm --dport 53 -j DROP -m comment --comment "sogoucdn.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|08|myqcloud|03|com" --algo bm --dport 53 -j DROP -m comment --comment "myqcloud.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|06|weixin|02|qq|03|com" --algo bm --dport 53 -j DROP -m comment --comment "weixin.qq.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|05|gtimg|02|cn" --algo bm --dport 53 -j DROP -m comment --comment "gtimg.cn" 
@@ -112,7 +113,9 @@ iptables -A OUTPUT -p udp -m string --hex-string "|046461746106666c7572727903636
 iptables -A OUTPUT -p udp -m string --hex-string "|047769666903636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "wifi.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|05|jpush|02|cn" --algo bm --dport 53 -j DROP -m comment --comment "jpush.cn" 
 iptables -A OUTPUT -p udp -m string --hex-string "|066d6d7374617403636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "mmstat.com" 
-iptables -A OUTPUT -p udp -m string --hex-string "|09|leancloud|02|cn" --algo bm --dport 53 -j DROP -m comment --comment "leancloud.cn" 
+#tier2cloud
+iptables -A OUTPUT -p udp -m string --hex-string "|09|leancloud|02|cn" --algo bm --dport 53 -j DROP -m comment --comment "leancloud.cn"
+
 
 
 
