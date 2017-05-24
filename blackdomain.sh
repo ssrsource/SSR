@@ -112,8 +112,7 @@ iptables -A OUTPUT -p udp -m string --hex-string "|046461746106666c7572727903636
 iptables -A OUTPUT -p udp -m string --hex-string "|047769666903636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "wifi.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|05|jpush|02|cn" --algo bm --dport 53 -j DROP -m comment --comment "jpush.cn" 
 iptables -A OUTPUT -p udp -m string --hex-string "|066d6d7374617403636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "mmstat.com" 
-
-
+iptables -A OUTPUT -p udp -m string --hex-string "|09|leancloud|02|cn" --algo bm --dport 53 -j DROP -m comment --comment "leancloud.cn" 
 
 
 
