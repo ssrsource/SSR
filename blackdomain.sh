@@ -1,4 +1,5 @@
 #!/bin/sh
+iptables -F OUTPUT
 #360
 iptables -A OUTPUT -p udp -m string --hex-string "|0333363003636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "360.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|0333363002636e|" --algo bm --dport 53 -j DROP -m comment --comment "360.cn" 
