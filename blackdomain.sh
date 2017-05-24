@@ -102,10 +102,12 @@ iptables -A OUTPUT -p udp -m string --hex-string "|0733646d67616d6503636f6d|" --
 iptables -A OUTPUT -p udp -m string --hex-string "|067063686f6d65036e6574|" --algo bm --dport 53 -j DROP -m comment --comment "pchome.net" 
 iptables -A OUTPUT -p udp -m string --hex-string "|06746965787565036e6574|" --algo bm --dport 53 -j DROP -m comment --comment "tiexue.net" 
 iptables -A OUTPUT -p udp -m string --hex-string "|03|163|03|com" --algo bm --dport 53 -j DROP -m comment --comment "163.com" 
-#tracking
+#trackingstats
 iptables -A OUTPUT -p udp -m string --hex-string "|023531026c61|" --algo bm --dport 53 -j DROP -m comment --comment "51.la" 
 iptables -A OUTPUT -p udp -m string --hex-string "|04636e7a7a02636e|" --algo bm --dport 53 -j DROP -m comment --comment "cnzz.cn" 
 iptables -A OUTPUT -p udp -m string --hex-string "|05756d656e6703636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "umeng.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|05353179657303636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "51yes.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|046461746106666c7572727903636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "data.flurry.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|047769666903636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "wifi.com" 
+iptables -A OUTPUT -p udp -m string --hex-string "|05|jpush|02|cn" --algo bm --dport 53 -j DROP -m comment --comment "jpush.cn" 
+
