@@ -116,7 +116,11 @@ iptables -A OUTPUT -p udp -m string --hex-string "|05|jpush|02|cn" --algo bm --d
 iptables -A OUTPUT -p udp -m string --hex-string "|066d6d7374617403636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "mmstat.com" 
 #tier2cloud
 iptables -A OUTPUT -p udp -m string --hex-string "|09|leancloud|02|cn" --algo bm --dport 53 -j DROP -m comment --comment "leancloud.cn"
-
+iptables -A OUTPUT -p udp -m string --hex-string "|03|mob|03|com" --algo bm --dport 53 -j DROP -m comment --comment "mob.com" 
+iptables -A OUTPUT -p udp -m string --hex-string "|036d6f6204636f6d0d|" --algo bm --dport 53 -j DROP -m comment --comment "mob.com" 
+iptables -A OUTPUT -p udp -m string --hex-string "|07616c74616d6f6204636f6d0d|" --algo bm --dport 53 -j DROP -m comment --comment "altamob.com" 
+iptables -A OUTPUT -p udp -m string --hex-string "|076d65697475616e04636f6d0d|" --algo bm --dport 53 -j DROP -m comment --comment "meituan.com" 
+iptables -A OUTPUT -p udp -m string --hex-string "|056d7479756e04636f6d0d|" --algo bm --dport 53 -j DROP -m comment --comment "mtyun.com" 
 
 
 
