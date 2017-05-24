@@ -20,6 +20,7 @@ iptables -A OUTPUT -p udp -m string --hex-string "|0579756e6f7303636f6d|" --algo
 iptables -A OUTPUT -p udp -m string --hex-string "|06|alicdn|03|com" --algo bm --dport 53 -j DROP -m comment --comment "alicdn" 
 iptables -A OUTPUT -p udp -m string --hex-string "|04|tmall|03|com" --algo bm --dport 53 -j DROP -m comment --comment "tmall.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|04|tmall|02|hk" --algo bm --dport 53 -j DROP -m comment --comment "tmall.hk" 
+iptables -A OUTPUT -p udp -m string --hex-string "|06|taobao|03|com" --algo bm --dport 53 -j DROP -m comment --comment "taobao.com" 
 #baidu
 iptables -A OUTPUT -p udp -m string --hex-string "|05626169647503636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "baidu.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|056261696475026a70|" --algo bm --dport 53 -j DROP -m comment --comment "baidu.jp" 
@@ -52,6 +53,8 @@ iptables -A OUTPUT -p udp -m string --hex-string "|0668756177656903636f6d02636e|
 iptables -A OUTPUT -p udp -m string --hex-string "|05766d616c6c03636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "vmall.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|086877636c6f75647303636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "hwclouds.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|076869636c6f756403636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "hicloud.com" 
+iptables -A OUTPUT -p udp -m string --hex-string "|04|duba|03|com" --algo bm --dport 53 -j DROP -m comment --comment "duba.com" 
+
 #weibo
 iptables -A OUTPUT -p udp -m string --hex-string "|05776569626f03636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "weibo.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|05776569626f02636e|" --algo bm --dport 53 -j DROP -m comment --comment "weibo.cn" 
@@ -80,6 +83,8 @@ iptables -A OUTPUT -p udp -m string --hex-string "|05796b696d6703636f6d|" --algo
 iptables -A OUTPUT -p udp -m string --hex-string "|0678756e6c656903636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "xunlei.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|0331313503636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "115.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|057869616d6903636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "xiami.com" 
+iptables -A OUTPUT -p udp -m string --hex-string "|06|zhanqi|02|tv" --algo bm --dport 53 -j DROP -m comment --comment "zhanqi.tv" 
+iptables -A OUTPUT -p udp -m string --hex-string "|02|le|03|com" --algo bm --dport 53 -j DROP -m comment --comment "le.com" 
 #bbs
 iptables -A OUTPUT -p udp -m string --hex-string "|067469616e796102636e|" --algo bm --dport 53 -j DROP -m comment --comment "tianya.cn" 
 iptables -A OUTPUT -p udp -m string --hex-string "|057a6869687503636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "zhihu.com" 
@@ -90,6 +95,7 @@ iptables -A OUTPUT -p udp -m string --hex-string "|076b64736c69666503636f6d|" --
 iptables -A OUTPUT -p udp -m string --hex-string "|0733646d67616d6503636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "3dmgame.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|067063686f6d65036e6574|" --algo bm --dport 53 -j DROP -m comment --comment "pchome.net" 
 iptables -A OUTPUT -p udp -m string --hex-string "|06746965787565036e6574|" --algo bm --dport 53 -j DROP -m comment --comment "tiexue.net" 
+iptables -A OUTPUT -p udp -m string --hex-string "|03|163|03|com" --algo bm --dport 53 -j DROP -m comment --comment "163.com" 
 #tracking
 iptables -A OUTPUT -p udp -m string --hex-string "|023531026c61|" --algo bm --dport 53 -j DROP -m comment --comment "51.la" 
 iptables -A OUTPUT -p udp -m string --hex-string "|04636e7a7a02636e|" --algo bm --dport 53 -j DROP -m comment --comment "cnzz.cn" 
