@@ -7,6 +7,7 @@ iptables -A OUTPUT -p udp -m string --hex-string "|073336307361666503636f6d|" --
 iptables -A OUTPUT -p udp -m string --hex-string "|073336307361666502636e|" --algo bm --dport 53 -j DROP -m comment --comment "360safe.cn" 
 iptables -A OUTPUT -p udp -m string --hex-string "|063336306b616e03636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "360kan.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|02736f03636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "so.com" 
+iptables -A OUTPUT -p udp -m string --hex-string "|057168696d6703636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "qhimg.com" 
 #alipay
 iptables -A OUTPUT -p udp -m string --hex-string "|06616c6970617903636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "alipay.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|04616d617003636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "amap.com" 
@@ -21,7 +22,8 @@ iptables -A OUTPUT -p udp -m string --hex-string "|04|tmall|03|com" --algo bm --
 iptables -A OUTPUT -p udp -m string --hex-string "|04|tmall|02|hk" --algo bm --dport 53 -j DROP -m comment --comment "tmall.hk" 
 iptables -A OUTPUT -p udp -m string --hex-string "|06|taobao|03|com" --algo bm --dport 53 -j DROP -m comment --comment "taobao.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|09616c696b756e6c756e03636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "alikunlun.com" 
-
+iptables -A OUTPUT -p udp -m string --hex-string "|05|yunos|02|cn" --algo bm --dport 53 -j DROP -m comment --comment "yunos.cn" 
+iptables -A OUTPUT -p udp -m string --hex-string "|05616e67656f02636e|" --algo bm --dport 53 -j DROP -m comment --comment "angeo.cn" 
 #baidu
 iptables -A OUTPUT -p udp -m string --hex-string "|05626169647503636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "baidu.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|056261696475026a70|" --algo bm --dport 53 -j DROP -m comment --comment "baidu.jp" 
