@@ -105,6 +105,7 @@ iptables -A OUTPUT -p udp -m string --hex-string "|0331313503636f6d|" --algo bm 
 iptables -A OUTPUT -p udp -m string --hex-string "|057869616d6903636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "xiami.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|06|zhanqi|02|tv" --algo bm --dport 53 -j DROP -m comment --comment "zhanqi.tv" 
 iptables -A OUTPUT -p udp -m string --hex-string "|02|le|03|com" --algo bm --dport 53 -j DROP -m comment --comment "le.com" 
+iptables -A OUTPUT -p udp -m string --hex-string "|08|acgvideo|03|com" --algo bm --dport 53 -j DROP -m comment --comment "acgvideo.com" 
 #bbs
 iptables -A OUTPUT -p udp -m string --hex-string "|067469616e796102636e|" --algo bm --dport 53 -j DROP -m comment --comment "tianya.cn" 
 iptables -A OUTPUT -p udp -m string --hex-string "|057a6869687503636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "zhihu.com" 
