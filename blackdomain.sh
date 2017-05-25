@@ -106,6 +106,11 @@ iptables -A OUTPUT -p udp -m string --hex-string "|057869616d6903636f6d|" --algo
 iptables -A OUTPUT -p udp -m string --hex-string "|06|zhanqi|02|tv" --algo bm --dport 53 -j DROP -m comment --comment "zhanqi.tv" 
 iptables -A OUTPUT -p udp -m string --hex-string "|02|le|03|com" --algo bm --dport 53 -j DROP -m comment --comment "le.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|08|acgvideo|03|com" --algo bm --dport 53 -j DROP -m comment --comment "acgvideo.com" 
+iptables -A OUTPUT -p udp -m string --hex-string "|0779697a6869626f03636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "yizhibo.com" 
+iptables -A OUTPUT -p udp -m string --hex-string "|067869616f6b61027476|" --algo bm --dport 53 -j DROP -m comment --comment "xiaoka.tv" 
+iptables -A OUTPUT -p udp -m string --hex-string "|056864736c6203636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "hdslb.com" 
+iptables -A OUTPUT -p udp -m string --hex-string "|076169786966616e03636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "aixifan.com" 
+iptables -A OUTPUT -p udp -m string --hex-string "|0362676d027476|" --algo bm --dport 53 -j DROP -m comment --comment "bgm.tv" 
 #bbs
 iptables -A OUTPUT -p udp -m string --hex-string "|067469616e796102636e|" --algo bm --dport 53 -j DROP -m comment --comment "tianya.cn" 
 iptables -A OUTPUT -p udp -m string --hex-string "|057a6869687503636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "zhihu.com" 
