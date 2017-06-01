@@ -55,6 +55,7 @@ iptables -A OUTPUT -p udp -m string --hex-string "|077179756e61707003636f6d|" --
 iptables -A OUTPUT -p udp -m string --hex-string "|067179756e657203636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "qyuner.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|066d717175726c03636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "mqqurl.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|05696763646e02636e|" --algo bm --dport 53 -j DROP -m comment --comment "igcdn.cn" 
+iptables -A OUTPUT -p udp -m string --hex-string "|02|qq|03|com" --algo bm --dport 53 -j DROP -m comment --comment "qq.com" 
 #mimeizuhuawei
 iptables -A OUTPUT -p udp -m string --hex-string "|026d6903636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "mi.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|026d6902636e|" --algo bm --dport 53 -j DROP -m comment --comment "mi.cn" 
