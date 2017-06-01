@@ -90,6 +90,7 @@ iptables -A OUTPUT -p udp -m string --hex-string "|0473696e6103636f6d|" --algo b
 iptables -A OUTPUT -p udp -m string --hex-string "|06|sinajs|02|cn" --algo bm --dport 53 -j DROP -m comment --comment "sinajs.cn" 
 iptables -A OUTPUT -p udp -m string --hex-string "|05|weico|02|cc" --algo bm --dport 53 -j DROP -m comment --comment "weico.cc" 
 iptables -A OUTPUT -p udp -m string --hex-string "|11|weibodangan|03|com" --algo bm --dport 53 -j DROP -m comment --comment "weibodangan.com"
+iptables -A OUTPUT -p udp -m string --hex-string "|07|wbdacdn|03|com" --algo bm --dport 53 -j DROP -m comment --comment "weibodangan.com"
 
 
 weibodangan.com
