@@ -152,7 +152,10 @@ iptables -A OUTPUT -p udp -m string --hex-string "|06|10jqka|03|com|02|cn" --alg
 
 #tier2cloud
 iptables -A OUTPUT -p udp -m string --hex-string "|09|leancloud|02|cn" --algo bm --dport 53 -j DROP -m comment --comment "leancloud.cn"
-iptables -A OUTPUT -p udp -m string --hex-string "|03|mob|03|com" --algo bm --dport 53 -j DROP -m comment --comment "mob.com" 
+iptables -A OUTPUT -p udp -m string --hex-string "|05|qiniu|03|com" --algo bm --dport 53 -j DROP -m comment --comment "qiniu.com"
+iptables -A OUTPUT -p udp -m string --hex-string "|07|clouddn|03|com" --algo bm --dport 53 -j DROP -m comment --comment "qiniuclouddn"
+iptables -A OUTPUT -p udp -m string --hex-string "|05|qnssl|03|com" --algo bm --dport 53 -j DROP -m comment --comment "qiniuclouddn"
+iptables -A OUTPUT -p udp -m string --hex-string "|10|chinacache|03|com" --algo bm --dport 53 -j DROP -m comment --comment "chinacache"
 iptables -A OUTPUT -p udp -m string --hex-string "|036d6f6204636f6d0d|" --algo bm --dport 53 -j DROP -m comment --comment "mob.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|07616c74616d6f6204636f6d0d|" --algo bm --dport 53 -j DROP -m comment --comment "altamob.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|076d65697475616e04636f6d0d|" --algo bm --dport 53 -j DROP -m comment --comment "meituan.com" 
