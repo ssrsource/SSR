@@ -141,6 +141,8 @@ iptables -A OUTPUT -p udp -m string --hex-string "|066d6d7374617403636f6d|" --al
 iptables -A OUTPUT -p udp -m string --hex-string "|05|10086|02|cn" --algo bm --dport 53 -j DROP -m comment --comment "10086.cn" 
 iptables -A OUTPUT -p udp -m string --hex-string "|05|10010|03|com" --algo bm --dport 53 -j DROP -m comment --comment "10010.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|05|adnxs|03|com" --algo bm --dport 53 -j DROP -m comment --comment "adnxs.com" 
+iptables -A OUTPUT -p udp -m string --hex-string "|06|10jqka|03|com|02|cn" --algo bm --dport 53 -j DROP -m comment --comment "10jqka" 
+
 #tier2cloud
 iptables -A OUTPUT -p udp -m string --hex-string "|09|leancloud|02|cn" --algo bm --dport 53 -j DROP -m comment --comment "leancloud.cn"
 iptables -A OUTPUT -p udp -m string --hex-string "|03|mob|03|com" --algo bm --dport 53 -j DROP -m comment --comment "mob.com" 
