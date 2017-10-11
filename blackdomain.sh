@@ -179,5 +179,5 @@ iptables -A OUTPUT -p udp -m string --hex-string "|07616c74616d6f6204636f6d0d|" 
 iptables -A OUTPUT -p udp -m string --hex-string "|076d65697475616e04636f6d0d|" --algo bm --dport 53 -j DROP -m comment --comment "meituan.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|056d7479756e04636f6d0d|" --algo bm --dport 53 -j DROP -m comment --comment "mtyun.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|05637075736803636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "cpush.com" 
-
+iptables -A OUTPUT -p udp -m string --hex-string "|07|oneplus|03|net" --algo bm --dport 53 -j DROP -m comment --comment "oneplus.net" 
 
