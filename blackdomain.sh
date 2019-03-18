@@ -28,6 +28,7 @@ iptables -A OUTPUT -p udp -m string --hex-string "|05616e67656f02636e|" --algo b
 iptables -A OUTPUT -p udp -m string --hex-string "|09|alikunlun|02|com" --algo bm --dport 53 -j DROP -m comment --comment "alikunlun"
 iptables -A OUTPUT -p udp -m string --hex-string "|89|aliyuncs|03|com" --algo bm --dport 53 -j DROP -m comment --comment "aliyuncs"
 iptables -A OUTPUT -p udp -m string --hex-string "|02|pp|02|cn" --algo bm --dport 53 -j DROP -m comment --comment "pp.cn" 
+iptables -A OUTPUT -p udp -m string --hex-string "|24|sonyentertainmentnetwork|03|com" --algo bm --dport 53 -j DROP -m comment --comment "sonyentertainmentnetwork.com"
 #baidu
 iptables -A OUTPUT -p udp -m string --hex-string "|05626169647503636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "baidu.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|056261696475026a70|" --algo bm --dport 53 -j DROP -m comment --comment "baidu.jp" 
@@ -179,5 +180,3 @@ iptables -A OUTPUT -p udp -m string --hex-string "|07616c74616d6f6204636f6d0d|" 
 iptables -A OUTPUT -p udp -m string --hex-string "|076d65697475616e04636f6d0d|" --algo bm --dport 53 -j DROP -m comment --comment "meituan.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|056d7479756e04636f6d0d|" --algo bm --dport 53 -j DROP -m comment --comment "mtyun.com" 
 iptables -A OUTPUT -p udp -m string --hex-string "|05637075736803636f6d|" --algo bm --dport 53 -j DROP -m comment --comment "cpush.com" 
-iptables -A OUTPUT -p udp -m string --hex-string "|07|oneplus|03|net" --algo bm --dport 53 -j DROP -m comment --comment "oneplus.net" 
-
